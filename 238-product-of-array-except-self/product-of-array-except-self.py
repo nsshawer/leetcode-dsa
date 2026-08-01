@@ -8,9 +8,8 @@ class Solution:
             answer[i] = prefix
             prefix *= num
         
-        for i, a in enumerate(nums[::-1]):
-            real_indx = len(nums) - 1 - i
-            answer[real_indx] *= suffix
-            suffix *= a         
+        for i in range(len(nums)- 1, -1, -1):
+            answer[i] *= suffix
+            suffix *= nums[i]      
 
         return answer
