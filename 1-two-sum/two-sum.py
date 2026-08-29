@@ -5,6 +5,5 @@ class Solution:
 
             if remainder in nums:
                 rem_indx = nums.index(remainder)
-
-            if remainder in nums and rem_indx != i:
-                return [i, rem_indx]
+                if rem_indx != i:
+                    return [i, rem_indx]
