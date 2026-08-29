@@ -16,7 +16,4 @@ class Solution:
             else:
                 stack.append(char)
 
-        if len(stack) == 0:
-            return True
-
-        return False
+        return len(stack) == 0
