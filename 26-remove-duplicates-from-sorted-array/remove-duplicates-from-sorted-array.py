@@ -7,4 +7,4 @@ class Solution:
                 nums[reader+1], nums[i] = nums[i], nums[reader+1]
                 reader += 1
             
-        return reader+1
+        return len(nums[:reader+1])
