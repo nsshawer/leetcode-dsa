@@ -4,8 +4,6 @@ class Solution:
 
         for n in nums:
             hash_table[n] += 1
-
-        print(hash_table)
         
         for i, h in enumerate(hash_table):
             if h == 0:
