@@ -4,9 +4,8 @@ class Solution:
         digit_sum = 0
 
         for n in nums:
-            digits = [int(d) for d in str(n)]
-            for d in digits:
-                digit_sum += d
+            while n > 0:
+                digit_sum += (n % 10)
+                n = n // 10
 
         return abs(element_sum - digit_sum)
-        
